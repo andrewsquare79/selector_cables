@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Administrador Catálogo</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet"
+href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="container py-4">
+
+<h1>
+
+Administrador de Catálogo
+
+</h1>
+
+<div class="card">
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<input
+id="buscar"
+class="form-control"
+placeholder="Buscar">
+
+</div>
+
+<div class="col-md-3">
+
+<button
+class="btn btn-primary"
+
+onclick="buscarProducto()">
+
+Buscar
+
+</button>
+
+</div>
+
+<div class="col-md-3">
+
+<button
+class="btn btn-success"
+
+onclick="nuevoProducto()">
+
+Nuevo Cable
+
+</button>
+
+</div>
+
+<div class="col-md-3">
+
+<button
+class="btn btn-secondary"
+
+onclick="exportarJSON()">
+
+Exportar JSON
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<br>
+
+<div id="tablaProductos">
+
+</div>
+
+<hr>
+
+<h2>
+
+Edición
+
+</h2>
+
+<div class="card">
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<label>Producto</label>
+
+<input
+id="Producto"
+class="form-control">
+
+</div>
+
+<div class="col-md-6">
+
+<label>Familia</label>
+
+<input
+id="Familia"
+class="form-control">
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<label>Voltaje</label>
+
+<input
+id="Voltaje"
+class="form-control">
+
+</div>
+
+<div class="col-md-4">
+
+<label>Conductor</label>
+
+<input
+id="Conductor"
+class="form-control">
+
+</div>
+
+<div class="col-md-4">
+
+<label>Sección</label>
+
+<input
+id="Seccion"
+class="form-control">
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<label>Aplicación</label>
+
+<input
+id="Aplicacion"
+class="form-control">
+
+</div>
+
+<div class="col-md-6">
+
+<label>Instalación</label>
+
+<input
+id="Instalacion"
+class="form-control">
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<label>PDF</label>
+
+<input
+id="PDF"
+class="form-control">
+
+</div>
+
+<div class="col-md-6">
+
+<label>Imagen</label>
+
+<input
+id="Imagen"
+class="form-control">
+
+</div>
+
+</div>
+
+<br>
+
+<button
+class="btn btn-success"
+
+onclick="guardarProducto()">
+
+Guardar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/google.js"></script>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

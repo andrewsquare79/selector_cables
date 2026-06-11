@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Calculadora Caída de Tensión</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+<link
+rel="stylesheet"
+href="css/caidatension.css">
+
+</head>
+
+<body>
+
+<div class="container py-5">
+
+<h1>
+
+Calculadora de Caída de Tensión
+
+</h1>
+
+<div class="card">
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<label>
+
+Voltaje
+
+</label>
+
+<input
+
+id="voltaje"
+
+class="form-control"
+
+value="480"
+
+type="number">
+
+</div>
+
+<div class="col-md-3">
+
+<label>
+
+Corriente (A)
+
+</label>
+
+<input
+
+id="corriente"
+
+class="form-control"
+
+type="number">
+
+</div>
+
+<div class="col-md-3">
+
+<label>
+
+Longitud (m)
+
+</label>
+
+<input
+
+id="longitud"
+
+class="form-control"
+
+type="number">
+
+</div>
+
+<div class="col-md-3">
+
+<label>
+
+FP
+
+</label>
+
+<input
+
+id="fp"
+
+value="0.9"
+
+class="form-control"
+
+type="number">
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-3">
+
+<label>
+
+Material
+
+</label>
+
+<select
+
+id="material"
+
+class="form-select">
+
+<option>Cobre</option>
+
+<option>Aluminio</option>
+
+</select>
+
+</div>
+
+<div class="col-md-3">
+
+<label>
+
+Sistema
+
+</label>
+
+<select
+
+id="sistema"
+
+class="form-select">
+
+<option>Trifásico</option>
+
+<option>Monofásico</option>
+
+</select>
+
+</div>
+
+<div class="col-md-3">
+
+<label>
+
+Sección (mm²)
+
+</label>
+
+<select
+
+id="seccion"
+
+class="form-select">
+
+<option>10</option>
+<option>16</option>
+<option>25</option>
+<option>35</option>
+<option>50</option>
+<option>70</option>
+<option>95</option>
+<option>120</option>
+<option>150</option>
+<option>185</option>
+<option>240</option>
+
+</select>
+
+</div>
+
+<div class="col-md-3">
+
+<label>
+
+Máximo permitido (%)
+
+</label>
+
+<input
+
+id="limite"
+
+value="3"
+
+class="form-control"
+
+type="number">
+
+</div>
+
+</div>
+
+<br>
+
+<button
+
+class="btn btn-primary"
+
+onclick="calcularCaida()">
+
+Calcular
+
+</button>
+
+</div>
+
+</div>
+
+<br>
+
+<div id="resultado">
+
+</div>
+
+</div>
+
+<script src="js/caidatension.js"></script>
+
+</body>
+
+</html>

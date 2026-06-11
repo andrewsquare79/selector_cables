@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Selección Automática</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+<link
+rel="stylesheet"
+href="css/seleccion.css">
+
+</head>
+
+<body>
+
+<div class="container py-5">
+
+<h1>
+
+Selección Automática de Cable
+
+</h1>
+
+<div class="card">
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<label>Corriente</label>
+
+<input
+id="corriente"
+type="number"
+class="form-control">
+
+</div>
+
+<div class="col-md-3">
+
+<label>Longitud</label>
+
+<input
+id="longitud"
+type="number"
+class="form-control">
+
+</div>
+
+<div class="col-md-3">
+
+<label>Voltaje</label>
+
+<input
+id="voltaje"
+value="480"
+type="number"
+class="form-control">
+
+</div>
+
+<div class="col-md-3">
+
+<label>Material</label>
+
+<select
+id="material"
+class="form-select">
+
+<option>Cobre</option>
+
+<option>Aluminio</option>
+
+</select>
+
+</div>
+
+</div>
+
+<br>
+
+<button
+
+class="btn btn-primary"
+
+onclick="seleccionarCable()">
+
+Calcular
+
+</button>
+
+</div>
+
+</div>
+
+<br>
+
+<div id="resultado">
+
+</div>
+
+</div>
+
+<script src="js/google.js"></script>
+
+<script src="js/seleccion.js"></script>
+
+</body>
+
+</html>

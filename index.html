@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Prysmian Cable Selector AI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+
+<!-- NAVBAR -->
+
+<!-- ========================= -->
+
+<nav class="navbar navbar-dark bg-primary">
+
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">
+
+<img src="img/logo.png"
+
+height="40">
+
+Cable Selector AI
+
+</a>
+
+</div>
+
+</nav>
+
+<!-- ========================= -->
+
+<!-- HERO -->
+
+<!-- ========================= -->
+
+<section class="hero">
+
+<div class="container py-5">
+
+<div class="row">
+
+<div class="col-lg-8">
+
+<h1>
+
+Seleccione el cable adecuado
+
+</h1>
+
+<p>
+
+Sistema inteligente de recomendación
+
+de cables Prysmian.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- BUSCADOR IA -->
+
+<!-- ========================= -->
+
+<div class="container mt-4">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h4>
+
+Búsqueda inteligente
+
+</h4>
+
+<textarea
+
+id="prompt"
+
+class="form-control"
+
+rows="3"
+
+placeholder="Ejemplo:
+
+Necesito un cable para una bomba
+
+sumergible 460V en camaronera">
+
+</textarea>
+
+<button
+
+class="btn btn-primary mt-3"
+
+onclick="buscarIA()">
+
+Buscar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<!-- FILTROS -->
+
+<!-- ========================= -->
+
+<div class="container mt-4">
+
+<div class="row">
+
+<div class="col-lg-3">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h5>Filtros</h5>
+
+<select
+
+id="familia"
+
+class="form-select mb-2">
+
+<option value="">
+
+Familia
+
+</option>
+
+</select>
+
+<select
+
+id="voltaje"
+
+class="form-select mb-2">
+
+<option value="">
+
+Voltaje
+
+</option>
+
+</select>
+
+<select
+
+id="aplicacion"
+
+class="form-select mb-2">
+
+<option value="">
+
+Aplicación
+
+</option>
+
+</select>
+
+<select
+
+id="instalacion"
+
+class="form-select mb-2">
+
+<option value="">
+
+Instalación
+
+</option>
+
+</select>
+
+<select
+
+id="ambiente"
+
+class="form-select mb-2">
+
+<option value="">
+
+Ambiente
+
+</option>
+
+</select>
+
+<select
+
+id="conductor"
+
+class="form-select mb-2">
+
+<option value="">
+
+Conductor
+
+</option>
+
+</select>
+
+<select
+
+id="lszh"
+
+class="form-select mb-2">
+
+<option value="">
+
+LSZH
+
+</option>
+
+<option>
+
+Sí
+
+</option>
+
+<option>
+
+No
+
+</option>
+
+</select>
+
+<button
+
+class="btn btn-success w-100"
+
+onclick="buscar()">
+
+Buscar
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<!-- RESULTADOS -->
+
+<!-- ========================= -->
+
+<div class="col-lg-9">
+
+<div class="row"
+
+id="resultados">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<!-- SPINNER -->
+
+<!-- ========================= -->
+
+<div
+
+id="loading"
+
+class="text-center p-5"
+
+style="display:none;">
+
+<div
+
+class="spinner-border">
+
+</div>
+
+<p>
+
+Buscando...
+
+</p>
+
+</div>
+
+<!-- ========================= -->
+
+<!-- MODAL -->
+
+<!-- ========================= -->
+
+<div
+
+class="modal fade"
+
+id="modalFicha">
+
+<div class="modal-dialog modal-xl">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5>
+
+Ficha Técnica
+
+</h5>
+
+<button
+
+class="btn-close"
+
+data-bs-dismiss="modal">
+
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<iframe
+
+id="pdf"
+
+width="100%"
+
+height="700">
+
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+
+<!-- FOOTER -->
+
+<!-- ========================= -->
+
+<footer
+
+class="bg-dark text-white mt-5">
+
+<div class="container p-4">
+
+Cable Selector AI
+
+Powered by Google Sheets +
+
+PapaParse +
+
+GitHub Pages
+
+</div>
+
+</footer>
+
+<script src="js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+/*==================================================
+ PRYSMIAN CABLE SELECTOR AI
+ comparador.css
+==================================================*/
+
+body{
+    background:#f5f7fa;
+}
+
+/* Título */
+
+h1{
+    color:#003B8E;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+/* Selectores */
+
+.form-select{
+    margin-bottom:15px;
+    border-radius:8px;
+}
+
+/* Botón */
+
+.btn-primary{
+    background:#003B8E;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#0059C8;
+}
+
+/* Tabla */
+
+.table{
+
+    background:white;
+
+    box-shadow:0px 2px 12px rgba(0,0,0,.15);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+.table th{
+
+    background:#003B8E;
+
+    color:white;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+.table td{
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+/* Primera columna */
+
+.table td:first-child{
+
+    background:#ECECEC;
+
+    font-weight:bold;
+
+}
+
+/* Hover */
+
+.table tbody tr:hover{
+
+    background:#F4F8FF;
+
+}
+
+/* Columna destacada */
+
+.mejor{
+
+    background:#D1FFD6 !important;
+
+    font-weight:bold;
+
+}
+
+/* Columna alternativa */
+
+.alternativa{
+
+    background:#FFF4C2 !important;
+
+}
+
+/* Columna descartada */
+
+.descartado{
+
+    background:#FFE3E3 !important;
+
+}
+
+/* Imagen */
+
+.cable-img{
+
+    width:160px;
+
+    height:100px;
+
+    object-fit:contain;
+
+}
+
+/* Badge */
+
+.badge-categoria{
+
+    background:#003B8E;
+
+    color:white;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+}
+
+/* PDF */
+
+.btn-pdf{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+/* Tarjetas resumen */
+
+.card-comparador{
+
+    background:white;
+
+    border-radius:10px;
+
+    box-shadow:0px 2px 12px rgba(0,0,0,.15);
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+}
+
+/* Score */
+
+.score{
+
+    color:#003B8E;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.table{
+
+font-size:13px;
+
+}
+
+h1{
+
+font-size:24px;
+
+}
+
+}
+
+/* Animación */
+
+.fadein{
+
+animation:fade .4s;
+
+}
+
+@keyframes fade{
+
+0%{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
